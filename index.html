@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Tune</title>
+    <!-- CSS added -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Icon Added -->
+    <script src="https://kit.fontawesome.com/a79b1fce5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="wrap-container">
+            <div class="container">
+                <div id="audio-box">
+                    <h2>Tune</h2>
+                    <img id="img" src="images/bg-1.jpeg" alt="">
+                    <audio id="audio-file" controls autoplay src="" type="audio/mpeg/mp3"></audio>
+                    <div class="buttons">
+                        <h4>Playing: <span id="playing"></span>/<span id="total"></span></h4>
+                        <div>
+                            <button id="prev">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </button>
+                            <button id="pause">
+                                <i id="play-pause-btn" class="fa-solid fa-pause"></i>
+                            </button>
+                            <button id="next">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p>Playing Song: <span id="audio-name"></span></p>
+                </div>
+            </div>
+            <div class="music-menu">
+                <h3>Music List: <span id="total-music"></span> </h3>
+                <ul id="music-list"></ul>
+            </div>
+        </section>
+    </main>
+    <!-- Script File Added -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
